@@ -13,14 +13,14 @@ function App() {
   // the uuid is a string
   const [items, setItems] = useState<Item[]>([]);
   // we need to add new listItem when we click add, the function below will do its thingy.
-  const addItem = (product: string) => {
+  const addItem = (product: string, quantity: number) => {
     console.log("Made it to the app component with product: ", product);
     setItems([
       ...items,
       {
         id: uuid(),
         product,
-        quantity: Math.floor(Math.random() * 10) + 1,
+        quantity,
       },
     ]);
   };
