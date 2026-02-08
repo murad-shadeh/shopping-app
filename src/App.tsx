@@ -4,7 +4,9 @@ import Greeter from "./components/Greeter";
 function App() {
   return (
     <div>
-      <Greeter />
+      <Greeter person="Murad" />
+      <Greeter person="Waq" />
+      <Greeter person="Lara" />
     </div>
   );
 }
