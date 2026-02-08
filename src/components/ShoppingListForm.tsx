@@ -14,7 +14,7 @@ export default function ShoppingListForm({
   };
   return (
     <form onSubmit={handleSubmit}>
-      <input type="text" placeholder="product name" ref={inputRef} />
+      <input type="text" placeholder="product name" ref={inputRef} required />
       <button type="submit">Add Item</button>
     </form>
   );

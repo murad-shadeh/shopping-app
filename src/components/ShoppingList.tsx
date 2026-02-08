@@ -14,7 +14,7 @@ export default function ShoppingList({
         {items.map((listItem) => (
           <>
             <li key={listItem.id}>
-              {listItem.product} - {listItem.quantity}
+              {`Product is: ${listItem.product} - and Quantity is: ${listItem.quantity}`}
             </li>
           </>
         ))}
