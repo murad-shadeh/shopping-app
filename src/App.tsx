@@ -1,12 +1,10 @@
 import "./App.css";
-
-const num: number = 3;
-console.log("Hello from ts,", num);
+import Greeter from "./components/Greeter";
 
 function App() {
   return (
     <div>
-      <h1>Hello World!</h1>
+      <Greeter />
     </div>
   );
 }
