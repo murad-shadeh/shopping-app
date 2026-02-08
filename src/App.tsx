@@ -10,10 +10,14 @@ import type Item from "./models/item";
 
 function App() {
   const [items, setItems] = useState<Item[]>([]);
+  // we need to add new listItem when we click add, the function below will do its thingy.
+  const addItem = (product: string) => {
+    console.log("Made it to the app component with product: ", product);
+  };
   return (
     <div>
       <ShoppingList items={items} />
-      <ShoppingListForm />
+      <ShoppingListForm onAddItem={addItem} />
     </div>
   );
 }
