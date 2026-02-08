@@ -1,9 +1,5 @@
 import React, { type JSX } from "react";
-interface Item {
-  id: number;
-  product: string;
-  quantity: number;
-}
+import Item from "../models/items";
 // we take the props by follwing a pattern using an interface
 interface ShoppingListProps {
   items: Item[];
