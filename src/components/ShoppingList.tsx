@@ -1,5 +1,5 @@
-import React, { type JSX } from "react";
-import Item from "../models/items";
+import { type JSX } from "react";
+import type Item from "../models/item";
 // we take the props by follwing a pattern using an interface
 interface ShoppingListProps {
   items: Item[];

@@ -1,7 +1,8 @@
 import { useState } from "react";
 import "./App.css";
 import ShoppingList from "./components/ShoppingList";
-import Item from "./models/items";
+import ShoppingListForm from "./components/ShoppingListForm";
+import type Item from "./models/item";
 // const items = [
 //   { id: 1, product: "Lemon", quantity: 3 },
 //   { id: 2, product: "Chickent Breast", quantity: 2 },
@@ -12,6 +13,7 @@ function App() {
   return (
     <div>
       <ShoppingList items={items} />
+      <ShoppingListForm />
     </div>
   );
 }
